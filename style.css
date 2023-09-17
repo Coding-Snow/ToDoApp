@@ -1,0 +1,95 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap');
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ text-transform: capitalize;
+ font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #212121;
+}
+button{
+  cursor: pointer;
+}
+.app{
+  background: linear-gradient(45deg, #0099e5, #00a98f);
+  /* width: 80%; */
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 10px;
+}
+.app h1{
+  font-weight: 800;
+  color: #fff;
+  margin: 1rem 0;
+}
+.inputbox {
+  position: relative;
+}
+.inputbox .text{
+  padding: 10px;
+  color: #fff;
+}
+.inputbox .text::placeholder{
+  color: #ccc;
+}
+button,
+.text{
+  border: 0; outline: 0;
+  padding: 10px;
+  background: #371777;
+  color: #ccc;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+.inputbox button{
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+}
+.theTask{
+  display:flex;
+  align-items: center;
+  margin: 5px 0;
+  gap: 20px;
+  background: #fff;
+  padding: .5rem;
+  border-radius: 10px;
+}
+.theTask .taskText{
+  flex: 1;
+}
+.theTask li,
+.theTask button{
+  list-style: none;
+  padding: .5rem;
+  font-size: 1rem;
+  border-radius: .5rem;
+  color: #333;
+  background: #fff;
+}
+.completed{
+  opacity: .6;
+  text-decoration: line-through;
+}
+button i{
+  pointer-events: none;
+}
+.addTask:hover{
+  color: #0099e5;
+}
+.compBtn:hover{
+  color: #00a98f;
+}
